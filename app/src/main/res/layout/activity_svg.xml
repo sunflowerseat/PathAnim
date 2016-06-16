@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:oak="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/big_background"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cpb_background"
+        android:id="@+id/rl_background"
+        android:layout_centerInParent="true"
+        >
+        <com.fancy.path_anim_lib.AnimatedSvgView
+            android:id="@+id/animated_svg_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            oak:oakSvgFillStart="500"
+            oak:oakSvgFillTime="100"
+            oak:oakSvgImageSizeX="200"
+            oak:oakSvgImageSizeY="200"
+            oak:oakSvgTraceTime="2000"
+            oak:oakSvgTraceTimePerGlyph="1000" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动页动画"
+        android:textSize="30sp"
+        android:layout_below="@+id/rl_background"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/startpage_blue"
+        android:id="@+id/name"
+        />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.1.3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/startpage_blue"
+        android:id="@+id/versionCode"
+        />
+</RelativeLayout>
