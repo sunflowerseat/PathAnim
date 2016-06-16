@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnimatedSvgView"><attr format="integer" name="oakSvgImageSizeX"/><attr format="integer" name="oakSvgImageSizeY"/><attr format="string" name="oakSvgTraceTime"/><attr format="string" name="oakSvgTraceTimePerGlyph"/><attr format="string" name="oakSvgFillStart"/><attr format="string" name="oakSvgFillTime"/></declare-styleable>
+    <declare-styleable name="AspectRatioLayout"><attr format="string" name="oakAspectRatio"/></declare-styleable>
+    <string name="app_name">path-anim-lib</string>
+</resources>

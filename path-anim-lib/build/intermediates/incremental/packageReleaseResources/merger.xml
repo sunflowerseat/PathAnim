@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="E:\project\PathAnim\path-anim-lib\src\main\res"/><source path="E:\project\PathAnim\path-anim-lib\build\generated\res\rs\release"/><source path="E:\project\PathAnim\path-anim-lib\build\generated\res\resValues\release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="E:\project\PathAnim\path-anim-lib\src\release\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="E:\project\PathAnim\path-anim-lib\src\main\res"><file path="E:\project\PathAnim\path-anim-lib\src\main\res\values\attr.xml" qualifiers=""><declare-styleable name="AspectRatioLayout">
+        <attr format="string" name="oakAspectRatio"/>
+    </declare-styleable><declare-styleable name="AnimatedSvgView">
+        <!-- 原本SVG图像的大小 -->
+        <attr format="integer" name="oakSvgImageSizeX"/>
+        <attr format="integer" name="oakSvgImageSizeY"/>
+
+        <!-- 好像没啥用 -->
+        <attr format="string" name="oakSvgTraceTime"/>
+        <!-- path绘制动画时间 -->
+        <attr format="string" name="oakSvgTraceTimePerGlyph"/>
+
+        <!-- 图像灰的动画时间 -->
+        <attr format="string" name="oakSvgFillStart"/>
+        <!-- 图像变绿的动画时间 -->
+        <attr format="string" name="oakSvgFillTime"/>
+    </declare-styleable></file><file path="E:\project\PathAnim\path-anim-lib\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">path-anim-lib</string></file></source><source path="E:\project\PathAnim\path-anim-lib\build\generated\res\rs\release"/><source path="E:\project\PathAnim\path-anim-lib\build\generated\res\resValues\release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="E:\project\PathAnim\path-anim-lib\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AspectRatioLayout"><attr format="string" name="oakAspectRatio"/></declare-styleable><declare-styleable name="AnimatedSvgView"><attr format="integer" name="oakSvgImageSizeX"/><attr format="integer" name="oakSvgImageSizeY"/><attr format="string" name="oakSvgTraceTime"/><attr format="string" name="oakSvgTraceTimePerGlyph"/><attr format="string" name="oakSvgFillStart"/><attr format="string" name="oakSvgFillTime"/></declare-styleable></configuration></mergedItems></merger>
