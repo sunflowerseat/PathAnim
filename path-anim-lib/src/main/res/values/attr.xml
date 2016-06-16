@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AspectRatioLayout">
+        <attr name="oakAspectRatio" format="string" />
+    </declare-styleable>
+    <declare-styleable name="AnimatedSvgView">
+        <!-- 原本SVG图像的大小 -->
+        <attr name="oakSvgImageSizeX" format="integer" />
+        <attr name="oakSvgImageSizeY" format="integer" />
+
+        <!-- 好像没啥用 -->
+        <attr name="oakSvgTraceTime" format="string" />
+        <!-- path绘制动画时间 -->
+        <attr name="oakSvgTraceTimePerGlyph" format="string" />
+
+        <!-- 图像灰的动画时间 -->
+        <attr name="oakSvgFillStart" format="string" />
+        <!-- 图像变绿的动画时间 -->
+        <attr name="oakSvgFillTime" format="string" />
+    </declare-styleable>
+</resources>
