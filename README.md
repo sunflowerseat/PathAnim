@@ -57,7 +57,8 @@ oakSvgTraceTimePerGlyph 路径绘制时间
         });
 ```
 
-关于demo可以参考app中的代码,还有我的博客![alt text](http://blog.csdn.net/Fancy_xty/article/details/51699679 "Title")
+关于demo可以参考app中的代码,还有[我的博客](http://blog.csdn.net/Fancy_xty/article/details/51699679 "Title")
+http://blog.csdn.net/Fancy_xty/article/details/51699679
 快动手写一个属于你的独特的启动页动画吧.
 有任何问题欢迎加群讨论:283272067
 希望大家多聊技术,多分享代码.
