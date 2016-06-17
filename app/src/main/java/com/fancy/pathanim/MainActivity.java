@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
-                start(v,2800);
+                start(v,700);
             }
         });
         anim.start();
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         ObjectAnimator a3 = ObjectAnimator.ofFloat(versionCode, "alpha", 0f,1f);
         ObjectAnimator a4 = ObjectAnimator.ofFloat(name, "alpha", 0f,1f);
         set.playTogether(a2, a3, a4);
-        set.setDuration(2800);
+        set.setDuration(700);
         set.start();
         mAnimatedSvgView.start();
     }

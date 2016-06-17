@@ -1,4 +1,29 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'pathanim'
+
+    publishedGroupId = 'com.fancy.library'
+    libraryName = 'path-anim-lib'
+    artifact = 'pathanim'
+
+    libraryDescription = 'A wrapper for Facebook Native Like Button (LikeView) on Android'
+
+    siteUrl = 'https://github.com/sunflowerseat/PathAnim'
+    gitUrl = 'https://github.com/sunflowerseat/PathAnim.git'
+
+    libraryVersion = '1.0.1'
+
+    developerId = 'sunflowerseat'
+    developerName = 'fancy_xty'
+    developerEmail = 'sunflowerseat@126.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 23
