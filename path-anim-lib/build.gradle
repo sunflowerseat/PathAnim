@@ -1,29 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.android.library'
-
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'pathanim'
-
-    publishedGroupId = 'com.fancy.library'
-    libraryName = 'path-anim-lib'
-    artifact = 'pathanim'
-
-    libraryDescription = 'A wrapper for Facebook Native Like Button (LikeView) on Android'
-
-    siteUrl = 'https://github.com/sunflowerseat/PathAnim'
-    gitUrl = 'https://github.com/sunflowerseat/PathAnim.git'
-
-    libraryVersion = '1.0.1'
-
-    developerId = 'sunflowerseat'
-    developerName = 'fancy_xty'
-    developerEmail = 'sunflowerseat@126.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
+apply plugin: 'com.novoda.bintray-release'//添加
 
 android {
     compileSdkVersion 23
@@ -47,4 +23,14 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
+}
+
+//添加
+publish {
+    userOrg = 'sunflowerseat'
+    groupId = 'com.fancy.library'
+    artifactId = 'pathanim'
+    publishVersion = '1.0.1'
+    desc = 'Oh hi, this is a nice description for a project, right?'
+    website = 'https://github.com/sunflowerseat/PathAnim'
 }
