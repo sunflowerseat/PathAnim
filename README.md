@@ -3,3 +3,57 @@
 为了展现动画效果,把时间调节的有些慢,可以自行设置快一点.
 <br/>
 ![alt text](https://raw.githubusercontent.com/sunflowerseat/PathAnim/master/preview/startpage-anim.gif "Title")
+
+使用方法:
+在module中添加依赖:
+```
+compile 'com.fancy.library:pathanim:1.0.1'
+```
+在需要使用路径动画的布局文件中
+```
+<com.fancy.path_anim_lib.AnimatedSvgView
+            android:id="@+id/animated_svg_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            oak:oakSvgFillStart="500"
+            oak:oakSvgFillTime="100"
+            oak:oakSvgImageSizeX="200"
+            oak:oakSvgImageSizeY="200"
+            oak:oakSvgTraceTime="2000"
+            oak:oakSvgTraceTimePerGlyph="1000" />
+```
+简单介绍部分重要属性:
+oakSvgFillTime路径动画填充时间
+oakSvgImageSizeX 原图x所占像素
+oakSvgImageSizeY 原图y所占像素
+oakSvgTraceTimePerGlyph 路径绘制时间
+
+在Activity代码中
+```
+        mAnimatedSvgView = (AnimatedSvgView) findViewById(R.id.animated_svg_view);
+        //设置path String
+        mAnimatedSvgView.setGlyphStrings(AnimPath.ANIM_PATH);
+        //Path填充颜色
+        mAnimatedSvgView.setFillPaints(255,255,255,255);
+        //设置跑动光线的颜色
+        mAnimatedSvgView.setTraceColors(255,255,255,255);
+        //设置轮廓颜色
+        mAnimatedSvgView.setTraceResidueColors(255,255,255,255);
+
+        mAnimatedSvgView.setOnStateChangeListener(new AnimatedSvgView.OnStateChangeListener() {
+            @Override
+            public void onStateChange(int state) {
+                if (state == AnimatedSvgView.STATE_FILL_STARTED) {
+
+                    AnimatorSet set = new AnimatorSet();
+                    Interpolator interpolator = new DecelerateInterpolator();
+                    ObjectAnimator a1 = ObjectAnimator.ofFloat(mAnimatedSvgView, "translationY", 0);
+                    a1.setInterpolator(interpolator);
+                    set.playTogether(a1);
+                    set.start();
+                }
+            }
+        });
+```
+
