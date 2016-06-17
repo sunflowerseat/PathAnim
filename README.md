@@ -5,6 +5,7 @@
 ![alt text](https://raw.githubusercontent.com/sunflowerseat/PathAnim/master/preview/startpage-anim.gif "Title")
 
 使用方法:
+该路径动画库使用了nineoldandroid兼容就api版本,可以支持到2.3以上
 在module中添加依赖:
 ```
 compile 'com.fancy.library:pathanim:1.0.1'
