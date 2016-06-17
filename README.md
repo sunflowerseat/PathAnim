@@ -26,8 +26,11 @@ compile 'com.fancy.library:pathanim:1.0.1'
 ```
 简单介绍部分重要属性:
 oakSvgFillTime路径动画填充时间
+
 oakSvgImageSizeX 原图x所占像素
+
 oakSvgImageSizeY 原图y所占像素
+
 oakSvgTraceTimePerGlyph 路径绘制时间
 
 在Activity代码中
