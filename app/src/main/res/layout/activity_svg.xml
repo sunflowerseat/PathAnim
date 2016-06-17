@@ -24,12 +24,12 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_centerInParent="true"
-            oak:oakSvgFillStart="500"
-            oak:oakSvgFillTime="100"
+            oak:oakSvgFillStart="2000"
+            oak:oakSvgFillTime="400"
             oak:oakSvgImageSizeX="200"
             oak:oakSvgImageSizeY="200"
-            oak:oakSvgTraceTime="2000"
-            oak:oakSvgTraceTimePerGlyph="1000" />
+            oak:oakSvgTraceTime="8000"
+            oak:oakSvgTraceTimePerGlyph="4000" />
 
 
     </RelativeLayout>
