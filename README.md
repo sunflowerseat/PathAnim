@@ -10,6 +10,8 @@
 ```
 compile 'com.fancy.library:pathanim:1.0.1'
 ```
+如果有其他需求,可以把path-anim-lib拷贝到本地修改.
+
 在需要使用路径动画的布局文件中
 ```
 <com.fancy.path_anim_lib.AnimatedSvgView
@@ -25,6 +27,7 @@ compile 'com.fancy.library:pathanim:1.0.1'
             oak:oakSvgTraceTimePerGlyph="1000" />
 ```
 简单介绍部分重要属性:
+
 oakSvgFillTime路径动画填充时间
 
 oakSvgImageSizeX 原图x所占像素
@@ -61,7 +64,7 @@ oakSvgTraceTimePerGlyph 路径绘制时间
         });
 ```
 
-关于demo可以参考app中的代码,还有[我的博客](http://blog.csdn.net/Fancy_xty/article/details/51699679 "Title")
+关于demo可以参考app中的代码和[我的博客](http://blog.csdn.net/Fancy_xty/article/details/51699679 "Title")
 http://blog.csdn.net/Fancy_xty/article/details/51699679
 快动手写一个属于你的独特的启动页动画吧.
 有任何问题欢迎加群讨论:283272067
