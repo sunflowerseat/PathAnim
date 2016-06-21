@@ -65,6 +65,7 @@ oakSvgTraceTimePerGlyph 路径绘制时间
 ```
 注意事项:
 1/库导入了nineoldandroid兼容动画,如果你的项目中也导入了这个库,会报一个冲突,删掉你项目中nineoldandroid的依赖即可.
+
 2/最好在oncreate方法中,调用mAnimatedSvgView.setGlyphStrings(AnimPath.ANIM_PATH); 这算是这个库的小bug,后期打算修改成使用资源文件配置这一项.
 
 关于demo可以参考app中的代码和[我的博客](http://blog.csdn.net/Fancy_xty/article/details/51699679 "Title")
