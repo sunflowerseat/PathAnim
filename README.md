@@ -64,6 +64,8 @@ oakSvgTraceTimePerGlyph 路径绘制时间
         });
 ```
 
+库导入了nineoldandroid兼容动画,如果你的项目中也导入了这个库,会报一个冲突,删掉你项目中nineoldandroid的依赖即可.
+
 关于demo可以参考app中的代码和[我的博客](http://blog.csdn.net/Fancy_xty/article/details/51699679 "Title")
 http://blog.csdn.net/Fancy_xty/article/details/51699679
 快动手写一个属于你的独特的启动页动画吧.
