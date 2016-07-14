@@ -31,10 +31,6 @@
             oak:oakSvgTraceTime="2000"
             oak:oakSvgTraceTimePerGlyph="1000" />
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
     </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
