@@ -61,7 +61,7 @@ public class AnimatedSvgView extends View {
     private int[] mFillGreens;
     private int[] mFillBlues;
     private GlyphData[] mGlyphData;
-    private String[] mGlyphStrings;
+    private String[] mGlyphStrings = DefaultPath.ANIM_PATH;
     private float mMarkerLength;
     private int mWidth;
     private int mHeight;

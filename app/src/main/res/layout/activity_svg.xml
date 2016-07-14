@@ -31,7 +31,6 @@
             oak:oakSvgTraceTime="2000"
             oak:oakSvgTraceTimePerGlyph="1000" />
 
-
     </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
